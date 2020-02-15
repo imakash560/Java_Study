@@ -8,6 +8,7 @@ public class permutation {
     }
     public static void permutate(String pro,String unpro){
         if(unpro.isEmpty()){
+            System.out.println(pro);
             return;
 
         }
