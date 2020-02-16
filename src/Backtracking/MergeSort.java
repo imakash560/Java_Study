@@ -6,8 +6,10 @@ import java.util.Scanner;
 public class MergeSort {
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
+        System.out.println("Enter the size of Array: ");
         int N = s.nextInt();
         int A[]=new int[N];
+        System.out.println("Enter the elements of Array: ");
         for(int i=0;i<N;i++){
             A[i] = s.nextInt();
         }
