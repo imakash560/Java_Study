@@ -4,18 +4,36 @@ import java.util.Scanner;
 
 public class Pattern6 {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        int n = s.nextInt();
-        for(int i=1;i<=n;i++){
-            for(int j=0;j<i;j++){
-                System.out.print(i+j+"  ");
-            }
-            if(i>1){
-                for(int k=1;k<=i-1;k++){
-                    System.out.print("  "+(i+k-n));
-                }
-            }
-            System.out.println();
+
+    int i, j, n, count = 0, count1 = 0, k = 0;
+    Scanner sc = new Scanner(System.in);
+    n = sc.nextInt();
+
+for(i = 1; i <= n; ++i)
+    {
+        for(j = 1; j <= n-i; ++j)
+        {
+            System.out.print("  ");
+            ++count;
         }
+
+        while(k != 2*i-1)
+        {
+            if (count <= n-1)
+            {
+                System.out.print(i+k + " ");
+                ++count;
+            }
+            else
+            {
+                ++count1;
+                System.out.print((i+k-2*count1) + " ");
+            }
+            ++k;
+        }
+        count1 = count = k = 0;
+
+        System.out.println();
     }
+}
 }
