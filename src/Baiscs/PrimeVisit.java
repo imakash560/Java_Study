@@ -13,7 +13,7 @@ public class PrimeVisit {
         Ar[0] = true;
         Ar[1] = true;
 
-        for (int p = 2; p < Ar.length; p++) {
+        for (int p = 1; p < Ar.length; p++) {
             if (!Ar[p]) {
                 for (int i = 2 * p; i < Ar.length; i += p) {
                     Ar[i] = true;

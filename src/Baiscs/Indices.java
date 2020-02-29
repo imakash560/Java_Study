@@ -2,7 +2,7 @@ package Baiscs;
 
 import java.util.Scanner;
 
-public class SumofArrays {
+public class Indices {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
@@ -11,15 +11,10 @@ public class SumofArrays {
             A[i] = s.nextInt();
         }
         int m = s.nextInt();
-        int B[] = new int[m];
-        for(int i=0;i<m;i++){
-            B[i] = s.nextInt();
+        for(int i=0;i<n;i++){
+            if(A[i] == m){
+                System.out.printf("%d ",i);
+            }
         }
-        int i=n,j=m;
-        int C[] = new int[Math.max(n,m)];
-        while(i<n && j<m){
-
-        }
-
     }
 }
